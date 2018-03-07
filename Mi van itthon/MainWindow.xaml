@@ -1,0 +1,47 @@
+﻿<Window x:Class="Mi_van_itthon.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mi_van_itthon"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="681" Width="832">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label x:Name="receptNeveLabel" Content="Recept Neve:" HorizontalAlignment="Left" Margin="53,71,0,0" VerticalAlignment="Top" Height="26" Width="79"/>
+        <Label x:Name="elkeszitesifolyamatLabel" Content="Elkészítési folyamat:" HorizontalAlignment="Left" Margin="53,365,0,0" VerticalAlignment="Top" Height="26" Width="115"/>
+        <Label x:Name="hozzavaloNeveLabel" Content="Hozzávaló neve:" HorizontalAlignment="Left" Margin="53,271,0,0" VerticalAlignment="Top" Height="26" Width="95"/>
+        <Label x:Name="mennyisegLabel" Content="Mennyiség:" HorizontalAlignment="Left" Margin="53,298,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.454,0.852" Height="26" Width="70"/>
+        <Label x:Name="mertekegysegLabel" Content="Mértékegység:" HorizontalAlignment="Left" Margin="53,324,0,0" VerticalAlignment="Top" Height="26" Width="88"/>
+        <Label x:Name="hozzavalokLabel" Content="Hozzávalók:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,97,0,0" Height="26" Width="73"/>
+        <TextBox x:Name="hozzavaloNeveTextBox" HorizontalAlignment="Left" Height="23" Margin="148,276,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="mennyisegTextBox" HorizontalAlignment="Left" Height="23" Margin="148,302,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="mertekegysegTextBox" HorizontalAlignment="Left" Height="23" Margin="148,328,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <ListBox x:Name="hozzavalokListBox" HorizontalAlignment="Left" Height="127" Margin="53,124,0,0" VerticalAlignment="Top" Width="215"/>
+        <RichTextBox x:Name="elkeszitesiFolyamatRichTextBox" HorizontalAlignment="Left" Height="150" Margin="53,391,0,0" VerticalAlignment="Top" Width="367">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <TextBox x:Name="receptNeveTextBox" HorizontalAlignment="Left" Height="23" Margin="132,75,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="288"/>
+        <Button x:Name="hozzavaloHozzaadasaButton" Content="Hozzávaló hozzáadása" HorizontalAlignment="Left" Margin="284,274,0,0" VerticalAlignment="Top" Width="125" Click="button_Click" Height="77"/>
+        <Button x:Name="hozzavaloEltavolitasaButton" Content="Hozzávaló eltávolítása" HorizontalAlignment="Left" Margin="284,124,0,0" VerticalAlignment="Top" Width="136" Click="button_Click" Height="34"/>
+        <GroupBox x:Name="hozzavaloLetrehozasGroupBox" Header="Hozzávaló létrehozása" HorizontalAlignment="Left" Margin="53,256,0,0" VerticalAlignment="Top" Height="104" Width="367"/>
+        <Button x:Name="receptLetrehozasaButton" Content="Recept Létrehozása" HorizontalAlignment="Left" Margin="53,546,0,0" VerticalAlignment="Top" Width="367" Height="20"/>
+        <GroupBox x:Name="receptLetrehozasGroupBox" Header="Recept Létrehozása" HorizontalAlignment="Left" Margin="37,37,0,0" VerticalAlignment="Top" Height="537" Width="401"/>
+        <Label x:Name="vanItthonLabel" Content="Van Itthon:" HorizontalAlignment="Left" Margin="473,71,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="vanItthonListBox" HorizontalAlignment="Left" Height="100" Margin="473,102,0,0" VerticalAlignment="Top" Width="316"/>
+        <Button x:Name="LassukButton" Content="Lássuk" HorizontalAlignment="Left" Margin="473,207,0,0" VerticalAlignment="Top" Width="316"/>
+        <Label x:Name="keszithetoEtelekLabel" Content="Készíthető ételek listája:" HorizontalAlignment="Left" Margin="473,232,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="keszithetoEtelekListBox" HorizontalAlignment="Left" Height="104" Margin="473,256,0,0" VerticalAlignment="Top" Width="316"/>
+        <Button x:Name="reszletekButton" Content="Ide vele, Éhes vagyok!" HorizontalAlignment="Left" Margin="473,365,0,0" VerticalAlignment="Top" Width="316" RenderTransformOrigin="-0.693,-1.9"/>
+        <GroupBox x:Name="miVanItthonGroupBox" Header="Mi Van Itthon?" HorizontalAlignment="Left" Margin="463,37,0,0" VerticalAlignment="Top" Height="354" Width="337"/>
+    </Grid>
+</Window>
